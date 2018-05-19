@@ -18,6 +18,8 @@ install:
   # Install RLS
   - rustup update
   - rustup component add rls-preview rust-analysis rust-src
+  # Install https://github.com/palantir/python-language-server
+  - pip install 'python-language-server[all]'
     
 script:
   - make check
